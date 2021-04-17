@@ -8,4 +8,3 @@ RUN mv bazel.gpg /etc/apt/trusted.gpg.d/
 RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list
 RUN apt-get update && apt-get install -y --no-install-recommends bazel
 RUN apt-get install -y openjdk-11-jdk
-

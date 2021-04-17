@@ -8,7 +8,7 @@
 
 # What is Bazel?
 
-Bazel is a free software tool that allows for the automation of building and testing of software. The company Google uses the build tool Blaze internally and released an open-sourced part of the Blaze tool as Bazel, named as an anagram of Blaze.
+[Bazel](https://bazel.build/) is a free software tool that allows for the automation of building and testing of software. The company Google uses the build tool Blaze internally and released an open-sourced part of the Blaze tool as Bazel, named as an anagram of Blaze.
 
 # What's in this image
 

@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends apt-transport-https curl gnupg ca-certificates clang python3-pip valgrind python3-dev
+RUN apt-get install -y --no-install-recommends apt-transport-https curl gnupg ca-certificates clang python3-pip valgrind python3-dev python-dev
 RUN pip3 install pybadges setuptools
 RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > bazel.gpg
 RUN mv bazel.gpg /etc/apt/trusted.gpg.d/

@@ -22,3 +22,4 @@ This image contains usefull features like:
 * pip
 * jdk
 * pybadges
+* git

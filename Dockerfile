@@ -6,7 +6,8 @@ RUN pip3 install pybadges setuptools
 RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > bazel.gpg
 RUN mv bazel.gpg /etc/apt/trusted.gpg.d/
 RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list
-RUN apt-get update && apt-get install -y --no-install-recommends bazel
+RUN apt-get update && apt-get install -y --no-install-recommends bazel-4.0.0
+RUN ln -s /usr/bin/bazel-4.0.0 /usr/bin/bazel
 RUN apt-get install -y openjdk-11-jdk
 RUN apt-get update && apt-get install -y git
 RUN apt update

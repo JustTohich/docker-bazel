@@ -9,3 +9,9 @@ RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.
 RUN apt-get update && apt-get install -y --no-install-recommends bazel
 RUN apt-get install -y openjdk-11-jdk
 RUN apt-get update && apt-get install -y git
+RUN apt update
+RUN apt install -y software-properties-common
+RUN add-apt-repository -y ppa:deadsnakes/ppa
+RUN apt install -y python3.7-dev
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
+RUN pip3 install typing-extensions
